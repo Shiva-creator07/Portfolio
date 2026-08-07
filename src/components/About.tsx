@@ -9,10 +9,10 @@ import * as THREE from "three";
 extend({ MeshLineGeometry, MeshLineMaterial });
 
 function Lanyard() {
-  const fixed = useRef<RapierRigidBody>(null);
-  const j1 = useRef<RapierRigidBody>(null);
-  const j2 = useRef<RapierRigidBody>(null);
-  const card = useRef<RapierRigidBody>(null);
+  const fixed = useRef<RapierRigidBody>(null!);
+  const j1 = useRef<RapierRigidBody>(null!);
+  const j2 = useRef<RapierRigidBody>(null!);
+  const card = useRef<RapierRigidBody>(null!);
   const lineRef = useRef<{ setPoints: (points: THREE.Vector3[]) => void }>(null);
 
   const [dragging, setDragging] = useState(false);
