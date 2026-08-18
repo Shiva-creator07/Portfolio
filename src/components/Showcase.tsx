@@ -12,6 +12,7 @@ const PROJECTS = [
     ],
     link: "https://github.com/Shiva-creator07",
   },
+  
   {
     title: "Smart Trafficking Management System",
     date: "Jun 2025 – Sept 2025",
@@ -22,16 +23,18 @@ const PROJECTS = [
     ],
     link: "https://github.com/Shiva-creator07",
   },
+
   {
-    title: "AltGenius",
-    date: "2025",
-    stack: ["React", "TypeScript", "Express", "Canva Apps SDK", "Claude Vision API"],
+    title: "E-commerce Profitability & CLV Analytics",
+    date: "Jul 2026 – Aug 2026",
+    stack: ["Python", "PostgreSQL", "SQL", "Streamlit", "Plotly"],
     bullets: [
-      "Built a full-stack Canva App that generates WCAG-compliant alt text variants for design elements using Claude's vision API.",
-      "Designed the Express backend to proxy vision API calls securely while the React/TypeScript frontend integrates natively into the Canva editor.",
+      "Built a full-stack analytics platform on 99K+ orders from the Olist e-commerce dataset, combining PostgreSQL (hosted on Neon), layered SQL views with window functions and CTEs, and a live Streamlit dashboard for profitability, RFM segmentation, and CLV metrics.",
+      "Identified and fixed two analytical bugs in production: an NTILE-based RFM scoring flaw that misclassified one-time buyers as frequent customers, and a CLV extrapolation formula producing 700x overestimates on sparse purchase data, both documented with root-cause analysis.",
     ],
-    link: "https://github.com/Shiva-creator07",
+    link: "https://github.com/Shiva-creator07/ecommerce-clv-analytics",
   },
+
   {
     title: "AI Chatbot for Student Queries",
     date: "Apr 2023 – May 2023",
