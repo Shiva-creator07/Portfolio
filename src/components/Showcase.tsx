@@ -36,14 +36,16 @@ const PROJECTS = [
   },
 
   {
-    title: "AI Chatbot for Student Queries",
-    date: "Apr 2023 – May 2023",
-    stack: ["Python", "NLP", "IBM Watson"],
-    bullets: [
-      "Built an NLP-powered chatbot to automate academic query resolution for college students, reducing repetitive support requests with instant, context-aware responses.",
-    ],
-    link: "https://github.com/Shiva-creator07",
-  },
+  title: "NetflixIQ",
+  date: "",
+  stack: ["Spring Boot", "PostgreSQL", "SQL", "REST API", "Java"],
+  bullets: [
+    "Built a Spring Boot + PostgreSQL analytics platform on a real Netflix catalog (8,807 titles) paired with realistic synthetic viewing data (5,000 users, 50,000 sessions).",
+    "Engineered 4 SQL-driven analytics features (binge detection, genre completion, engagement scoring, rolling active users) using window functions and gaps-and-islands patterns, exposed via 9 REST endpoints and validated by 10 passing tests.",
+  ],
+  link: "https://github.com/Shiva-creator07/netflix-iq",
+},
+
 ];
 
 export default function Showcase() {
@@ -78,9 +80,11 @@ export default function Showcase() {
                 />
               </div>
 
-              <p className="text-xs tracking-widest uppercase text-accent-secondary/80 mb-4">
-                {project.date}
-              </p>
+              {project.date && (
+                <p className="text-xs tracking-widest uppercase text-accent-secondary/80 mb-4">
+                  {project.date}
+                </p>
+              )}
 
               <ul className="space-y-2 mb-5 text-sm text-foreground/70 leading-relaxed">
                 {project.bullets.map((bullet, bi) => (
